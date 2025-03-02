@@ -28,7 +28,7 @@ let messageEl=document.getElementById("message-el");
 let sumEl=document.getElementById("sum-el");
 let cardEl=document.getElementById("card-el");
 let playerEl=document.getElementById("player-el");
-playerEl.textContent=player.name+":$"+player.chip;
+playerEl.textContent=player.name+":$ "+player.chip;
 console.log(messageEl)
 
 
@@ -51,11 +51,11 @@ else{
 function startGame()
 {
 
-    let isAlive = true
+    isAlive = true
     let firstCard=getRandomCard();
     let secondCard=getRandomCard();
-    let cards=[firstCard,secondCard];
-    let sum=firstCard+secondCard;
+     cards=[firstCard,secondCard];
+     sum=firstCard+secondCard;
     renderGame();
 
 }
